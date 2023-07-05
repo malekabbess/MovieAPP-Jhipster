@@ -1,0 +1,10 @@
+{
+  "moviesAppApp": {
+    "Role": {
+      "null": "",
+      "Director": "Director",
+      "Author": "Author",
+      "Actor": "Actor"
+    }
+  }
+}
