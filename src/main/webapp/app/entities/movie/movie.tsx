@@ -113,7 +113,7 @@ export const Movie = () => {
                   <FontAwesomeIcon icon={getSortIconByFieldName('publishDate')} />
                 </th>
                 <th>
-                  <Translate contentKey="moviesAppApp.movie.membreStaff">Membre Staff</Translate> <FontAwesomeIcon icon="sort" />
+                  <Translate contentKey="moviesAppApp.movie.membreStaffs">Membre Staff</Translate> <FontAwesomeIcon icon="sort" />
                 </th>
                 <th>
                   <Translate contentKey="moviesAppApp.movie.category">Category</Translate> <FontAwesomeIcon icon="sort" />

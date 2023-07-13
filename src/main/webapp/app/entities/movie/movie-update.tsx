@@ -163,7 +163,7 @@ export const MovieUpdate = () => {
                 {staff
                   ? staff.map(otherEntity => (
                       <option value={otherEntity.id} key={otherEntity.id}>
-                        {otherEntity.id}
+                        {otherEntity.firstName}
                       </option>
                     ))
                   : null}
@@ -180,7 +180,7 @@ export const MovieUpdate = () => {
                 {categories
                   ? categories.map(otherEntity => (
                       <option value={otherEntity.id} key={otherEntity.id}>
-                        {otherEntity.id}
+                        {otherEntity.name}
                       </option>
                     ))
                   : null}

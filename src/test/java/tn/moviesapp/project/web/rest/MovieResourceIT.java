@@ -50,8 +50,8 @@ class MovieResourceIT {
     private static final String DEFAULT_NAME = "AAAAAAAAAA";
     private static final String UPDATED_NAME = "BBBBBBBBBB";
 
-    private static final Duration DEFAULT_DURATION = Duration.ofHours(6);
-    private static final Duration UPDATED_DURATION = Duration.ofHours(12);
+    private static final Number DEFAULT_DURATION = 0;
+    private static final Number UPDATED_DURATION = 0;
 
     private static final String DEFAULT_DESCRIPTION = "AAAAAAAAAA";
     private static final String UPDATED_DESCRIPTION = "BBBBBBBBBB";

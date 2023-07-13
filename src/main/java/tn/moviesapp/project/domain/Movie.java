@@ -31,7 +31,7 @@ public class Movie implements Serializable {
     private String name;
 
     @Column(name = "duration")
-    private Duration duration;
+    private Number duration;
 
     @Lob
     @Column(name = "description")
@@ -93,16 +93,16 @@ public class Movie implements Serializable {
         this.name = name;
     }
 
-    public Duration getDuration() {
+    public Number getDuration() {
         return this.duration;
     }
 
-    public Movie duration(Duration duration) {
+    public Movie duration(Number duration) {
         this.setDuration(duration);
         return this;
     }
 
-    public void setDuration(Duration duration) {
+    public void setDuration(Number duration) {
         this.duration = duration;
     }
 

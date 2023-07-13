@@ -16,6 +16,7 @@ import org.springframework.security.web.authentication.www.BasicAuthenticationFi
 import org.springframework.security.web.header.writers.ReferrerPolicyHeaderWriter;
 import tech.jhipster.config.JHipsterProperties;
 import tn.moviesapp.project.security.*;
+import tn.moviesapp.project.web.filter.SimpleWebFilter;
 import tn.moviesapp.project.web.filter.SpaWebFilter;
 
 @Configuration
@@ -38,6 +39,7 @@ public class SecurityConfiguration {
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
         http
             .csrf(csrf -> csrf.ignoringRequestMatchers("/h2-console/**").disable())
+            .addFilterAfter(new SimpleWebFilter(), BasicAuthenticationFilter.class)
             .addFilterAfter(new SpaWebFilter(), BasicAuthenticationFilter.class)
             .headers(headers ->
                 headers
